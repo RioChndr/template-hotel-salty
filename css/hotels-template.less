@@ -1,0 +1,250 @@
+@white_color: #fff;
+@primary_color : #29A9C6;
+// @primary_color :#f7ea37;
+@secondary_color : #d4d4d438;
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+a {
+	color: @primary_color;
+	&:hover {
+		font-weight: bold;
+        text-decoration: none;
+	}
+}
+
+h2{
+    color:@primary_color;
+}
+footer{
+    p, h4{
+        color:@white_color !important;
+    }
+    ul{
+        padding:0;
+    }
+    li{
+        list-style: none;
+        a{
+            color:@white_color;
+        }
+    }
+}
+section.section-page{
+    width:100%;
+    padding-top:3em;
+    padding-bottom: 2em;
+    &.bg-grey{
+        background:@secondary_color;
+    }
+    h1,h2,h3,h4{
+        color:@primary_color;
+    }
+    
+    &.bg-special{
+        background:@primary_color;
+    }
+    .card:hover{
+        cursor: pointer;
+    }
+}
+
+.nav-item {
+	margin: 0 10px;
+    .dropdown-menu a{
+        color:@primary_color !important;
+    }
+}
+.navbar.fixed-top {
+	background: none;
+	transition: .3s ease-in-out;
+    a{
+        color:@white_color;
+    }
+}
+.navbar.fixed-top.scrolled {
+	background: @white_color;
+    box-shadow:-9px -2px 20px 0px #8a8a8a7d;
+    a{
+        color:@primary_color;
+    }
+	padding: 15px 0;
+	transition: .3s ease-in-out;
+}
+
+.portfolio-item {
+	margin-bottom: 30px;
+}
+header{
+    .carousel-caption {
+        top:    40vh;
+        h1 {
+            font-size: 5em;
+        }
+       
+    }
+    .carousel-item {
+        height: 100vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        background-attachment: fixed;
+    }
+    &.header-small{
+        h1 {
+            font-size: 2em;
+        }
+        .carousel-caption{
+            top:10vh;
+        }
+        .carousel-item{
+            height:40vh;
+            background-position: 0 -50vh;
+        }
+    }
+}
+ .form-check-room{
+//           width: 100%;
+//            display: flex;
+//            margin-top: 12em;
+            position: absolute;
+            top: 40em;
+     z-index: 10;
+        .square{
+            margin:1em;
+            padding:1.5em;
+//            min-width:25%;
+            background:@white_color;
+            text-align: left;
+            .title{
+                color:@primary_color;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            input, select{
+                width:100%;
+                padding:5px;
+                border:1px solid @primary_color;
+            }
+            &.btn{
+                display:flex;
+                align-items: center;
+                cursor:pointer;
+                background:@primary_color;
+                .title{
+                    width:100%;
+                    height: inherit;
+                    color:@white_color;
+                    margin:0;
+                }
+                &:hover{
+                    box-shadow: 5px 5px 10px 0px #8a8a8a7d;
+                }
+            }
+        }
+    }
+.text-shadow {
+	text-shadow: 5px 5px 8px #717171;
+}
+.text-primary{
+    color:@primary_color;
+}
+.card-shadow{
+    .card{
+        box-shadow:3px 3px 10px 0px #9999998a;
+         cursor: pointer;
+        transition: 200ms ease-out;
+        &:hover{
+            box-shadow: 7px 7px 10px 0px #9999998a;
+            transition: 200ms ease-in;
+        }
+    }
+}
+.owl-gallery{
+    img{
+        height: 150px;
+    }
+}
+.img-rounded{
+    border-radius: 50% 50%;
+}
+
+.listing{
+    .card-img-top{
+        position:relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            display:block;
+            transition:500ms ease-out;
+        }
+    }
+    .listing-title{
+        width: 100%;
+        left: 2em;
+        /* background-size: 100% 100%; */
+        position: absolute;
+        bottom: 2em;
+    }
+    .listing-body{
+        padding:2em;
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+            transition:500ms ease-in;
+        }
+    }
+}
+.listing2{
+    .listing-img{
+        overflow: hidden;
+        img{
+            position: relative;
+            left:-50%;
+            height:100%;
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+            transition:500ms ease-in;
+        }
+    }
+}
+
+.rating{
+    &.rating-white{
+        color:@white_color;
+
+    }
+}
+.room-detail-service{
+    .table{
+        td i{
+            margin-right:15px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .form-check-room{
+        position:inherit;
+        .square{
+            border:1px solid @primary_color;
+           
+        }
+    }
+}
+@media only screen and (min-width:2560px){
+    .form-check-room{
+        top:60em !important;
+    }
+    
+}
+
